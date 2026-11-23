@@ -1,0 +1,284 @@
+//本配置可用于TVBox或者影视仓使用，不定期维护里面的资源
+//配置方法：打开软件-设置-配置地址-粘帖此配置地址-返回主页完成
+//本接口免费使用，仅供软件测试使用，请勿商业用途。
+{
+  "spider": "./jar/custom_spider.jar;md5;52AB6A974F5567F1449BEA3EAF70BB59",
+  "wallpaper": "",
+  "sites": [
+    {
+      "key": "alist",
+      "name": "🍰┃Alist┃网盘",
+      "type": 3,
+      "api": "csp_AList",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "./json/alist.json"
+    },
+    {
+      "key": "webdav",
+      "name": "webdav",
+      "type": 3,
+      "api": "csp_WebDAV",
+      "searchable": 1,
+      "changeable": 0,
+      "ext": "./json/webdav.json"
+    },
+    {
+      "key": "samba",
+      "name": "samba",
+      "type": 3,
+      "api": "csp_Samba",
+      "searchable": 1,
+      "changeable": 0,
+      "ext": "./json/samba.json"
+    },
+    {
+      "key": "Douban",
+      "name": "🌕️┆片单┆精选",
+      "type": 3,
+      "api": "csp_Douban",
+      "searchable": 0,
+      "changeable": 1
+     },
+    {
+      "key": "Local",
+      "name": "📁┆文件┆浏览",
+      "type": 3,
+      "api": "csp_Local",
+      "searchable": 0,
+      "changeable": 0,
+      "quickSearch": 0
+    },
+    {
+      "key": "Aid",
+      "name": "🚑┃急救┃教学",
+      "type": 3,
+      "api": "csp_FirstAid",
+      "searchable": 0,
+      "quickSearch": 0,
+      "style": {
+        "type": "rect",
+        "ratio": 3.8
+      },
+      "gridview": "0-0-4.1"
+    },
+    {
+      "key": "虎牙js",
+      "name": "🐯虎牙┃直播",
+      "type": 3,
+      "api": "./js/drpy.min.js",
+      "ext": "https://git.yylx.win/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/虎牙.js",
+      "style": {
+        "type": "rect",
+        "ratio": 1.755
+      },
+      "timeout": 10,
+      "playerType": "2",
+      "searchable": 1,
+      "quickSearch": 0,
+      "changeable": 0
+    },
+    {
+      "key": "斗鱼js",
+      "name": "🐟斗鱼┃直播",
+      "type": 3,
+      "api": "./js/drpy.min.js",
+      "ext": "https://git.yylx.win/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/斗鱼直播.js",
+      "style": {
+        "type": "rect",
+        "ratio": 1.755
+      },
+      "timeout": 10,
+      "playerType": "2",
+      "searchable": 1,
+      "quickSearch": 0,
+      "changeable": 0
+    },
+    {
+      "key": "贝乐虎",
+      "name": "贝乐虎 • 儿童",
+      "type": 3,
+      "api": "csp_BeiLeHu",
+      "searchable": 1,
+      "quickSearch": 0,
+      "changeable": 0,
+      "style": {
+        "type": "rect",
+        "ratio": 1.618
+      }
+    },
+    {
+      "key": "dr_兔小贝",
+      "name": "📚儿童┃启蒙",
+      "type": 3,
+      "api": "./js/drpy.min.js",
+      "ext": "./js/兔小贝.js",
+      "style": {
+        "type": "rect",
+        "ratio": 1.597
+      },
+      "searchable": 0,
+      "quickSearch": 0,
+      "changeable": 0
+    },
+    {
+      "key": "少儿教育",
+      "name": "🧒┆少儿┆教育",
+      "type": 3,
+      "api": "csp_Bili",
+      "style": {
+        "type": "rect",
+        "ratio": 1.597
+      },
+      "searchable": 0,
+      "quickSearch": 0,
+      "changeable": 0,
+      "ext": {
+        "json": "https://nos.netease.com/ysf/89370c8ddf36b5e1beb4d71adb921bda.txt"
+      }
+    },
+    {
+      "key": "小学课堂",
+      "name": "📚┆小学┆课堂",
+      "type": 3,
+      "api": "csp_Bili",
+      "style": {
+        "type": "rect",
+        "ratio": 1.597
+      },
+      "searchable": 0,
+      "quickSearch": 0,
+      "changeable": 0,
+      "ext": {
+        "json": "https://nos.netease.com/ysf/d7a21cf34ede56f5c686ecfba5fc7e3f.txt"
+      }
+    },
+    {
+      "key": "初中课堂",
+      "name": "📐┆初中┆课堂",
+      "type": 3,
+      "api": "csp_Bili",
+      "style": {
+        "type": "rect",
+        "ratio": 1.597
+      },
+      "searchable": 0,
+      "quickSearch": 0,
+      "changeable": 0,
+      "ext": {
+        "json": "https://nos.netease.com/ysf/8f55d520f8d70056695740ef151744a7.txt"
+      }
+    },
+    {
+      "key": "高中教育",
+      "name": "🎓┆高中┆课堂",
+      "type": 3,
+      "api": "csp_Bili",
+      "style": {
+        "type": "rect",
+        "ratio": 1.597
+      },
+      "searchable": 0,
+      "quickSearch": 0,
+      "changeable": 0,
+      "ext": {
+        "json": "https://nos.netease.com/ysf/c66a4b5356141c49fd45ec51568017b4.txt"
+      }
+    },
+    {
+      "key": "BiliHeji",
+      "name": "🎉┆笔璃┆合集",
+      "type": 3,
+      "api": "csp_Bili",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 0,
+      "ext": {
+        "json": "https://nos.netease.com/ysf/0075389dca9afadd4614e9713765ff17.txt"
+      },
+      "style": {
+        "type": "rect",
+        "ratio": 1.433
+      }
+    },
+    {
+      "name": "🎉┆笔璃┆歌曲",
+      "key": "BiliGequ",
+      "type": 3,
+      "api": "csp_Bili",
+      "searchable": 0,
+      "quickSearch": 0,
+      "changeable": 0,
+      "ext": {
+        "json": "https://nos.netease.com/ysf/6496356286589c68f52c2f99c0c674c7.txt"
+      },
+      "style": {
+        "type": "rect",
+        "ratio": 1.433
+      }
+    }
+  ],
+  "parses": [],
+  "lives":[
+    { "name":"ITV","type":0,"url":"http://192.168.128.1/tvbox/playlist.txt","playerType": 1,epg:"https://epg.cdn.loc.cc/?ch={name}&date={date}"},
+    		 {
+		  "name": "Guovin菠菜",
+		  "type": 0,
+		  "url": "https://cdn.jsdelivr.net/gh/Guovin/iptv-api@gd/output/result.m3u"
+		}, 
+		{
+		  "name": "综合直播-饭太硬-王小二",
+		  "type": 0,
+		  "url": "http://193.123.86.190:14888/TV/iptv.php",
+		  "ua": "bingcha/1.1 (mianfeifenxiang)",
+		  "playerType": 2
+		},
+		 {
+		  "name": "Kimentanm",
+		  "type": 0,
+		  "url": "https://ghproxy.net/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
+		  "playerType": 2
+		},
+		{
+		  "name": "范明明（需开启V6网络）",
+		  "type": 0,
+		  "url": "https://nos.netease.com/ysf/3d75a78a0fc7ede372c03598d6d10367.m3u",
+		  "playerType": 2
+		},
+		{
+		  "name": "虎牙一起看",
+		  "type": 0,
+		  "url": "https://sub.ottiptv.cc/huyayqk.m3u",
+		  "playerType": 2,
+		  "timeout": 10,
+		  "ua": "okHttp/Mod-1.5.0.0"
+		},
+		{
+		  "name": "斗鱼一起看",
+		  "type": 0,
+		  "url": "https://sub.ottiptv.cc/douyuyqk.m3u",
+		  "playerType": 2,
+		  "timeout": 10,
+		  "ua": "okHttp/Mod-1.5.0.0"
+		},
+		{
+		  "name": "YY轮播",
+		  "type": 0,
+		  "url": "https://sub.ottiptv.cc/yylunbo.m3u",
+		  "playerType": 2,
+		  "timeout": 10,
+		  "ua": "okHttp/Mod-1.5.0.0"
+		}, 
+		{
+		  "name": "Yoursmile-南风",
+		  "type": 0,
+		  "url": "https://gh-proxy.org/https://raw.githubusercontent.com/yoursmile66/TVBox/main/live.txt",
+		  "ua": "okhttp/3.15",
+		  "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
+		  "logo": "https://epg.112114.xyz/logo/{name}.png"
+		}
+    ],
+  "rules": []
+}
+
